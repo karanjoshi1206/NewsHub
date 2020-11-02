@@ -17,6 +17,6 @@ app.get("", (req, res) => {
     res.render('index')
 })
 
-app.listen(8000, "127.0.0.1", () => {
+app.listen(port, "127.0.0.1", () => {
     console.log("listining")
 })
