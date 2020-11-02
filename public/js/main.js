@@ -24,7 +24,7 @@ getinfo = async (event) => {
 
     else {
         try {
-            let url = `http://newsapi.org/v2/top-headlines?country=${count}&category=${categ}&apiKey=a148ab49564c464395cd8da3e6b92d0b`
+            let url = `https://newsapi.org/v2/top-headlines?country=${count}&category=${categ}&apiKey=a148ab49564c464395cd8da3e6b92d0b`
 
             const respone = await fetch(url)
             const data = await respone.json()
