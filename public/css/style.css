@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600&family=Itim&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+li {
+  margin-left: 3rem;
+}
+
+.set_margin {
+  margin: 1rem 3rem;
+}
+.navbar {
+  border-radius: 1rem;
+}
+.containers {
+  height: 100%;
+  /* border: 3px solid rebeccapurple; */
+}
+.news_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.heading {
+  font-size: 2rem;
+  font-family: "Baloo Chettan 2", cursive;
+  font-weight: 400;
+}
+.content {
+  font-family: "Itim", cursive;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.source {
+  font-family: "Baloo Chettan 2", cursive;
+  font-weight: 400;
+}
+li {
+  list-style: none;
+}
+img {
+  height: 20rem;
+  width: 30rem;
+  border-radius: 2rem;
+}
+.visible {
+  display: none;
+}
+.ask {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 720px) {
+  li {
+    margin-left: 1rem;
+  }
+
+  .set_margin {
+    margin: 1rem 1rem;
+  }
+  .heading {
+    font-size: 1.2rem;
+  }
+  .content {
+    font-size: 1rem;
+  }
+  img {
+    height: 10rem;
+    width: 15rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+  }
+}
