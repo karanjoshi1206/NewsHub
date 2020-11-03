@@ -31,7 +31,7 @@ li {
 .heading {
   font-size: 2rem;
   font-family: "Baloo Chettan 2", cursive;
-  font-weight: 400;
+  font-weight: 700;
 }
 .content {
   font-family: "Itim", cursive;
@@ -46,8 +46,8 @@ li {
   list-style: none;
 }
 img {
-  height: 20rem;
-  width: 30rem;
+  height: 16rem;
+  width: 26rem;
   border-radius: 2rem;
 }
 .visible {
@@ -55,7 +55,7 @@ img {
 }
 .ask {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -78,5 +78,14 @@ img {
     width: 15rem;
     border-radius: 2rem;
     margin-bottom: 1rem;
+  }
+  .ask {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #submitBtn {
+    margin-left: 1rem;
   }
 }

@@ -24,8 +24,9 @@ getinfo = async (event) => {
 
     else {
         try {
-            let url = `https://newsapi.org/v2/top-headlines?country=${count}&category=${categ}&apiKey=a148ab49564c464395cd8da3e6b92d0b`
-
+            // let url = `https://newsapi.org/v2/top-headlines?country=${count}&category=${categ}&apiKey=a148ab49564c464395cd8da3e6b92d0b`
+            // let url = `https://content.guardianapis.com/search?q=${categ}from-date=${date}&api-key=test`
+            let url = `https://gnews.io/api/v4/search?q=${categ}&country=${count}&token=ba1aeb783849b19cc0bd2b964e4c5236&lang=en`
             const respone = await fetch(url)
             const data = await respone.json()
             const arrdata = [data];
@@ -33,7 +34,7 @@ getinfo = async (event) => {
             console.log(arrdata[0].articles[pos])
             let news_data = arrdata[0].articles[pos].description
             let news_url = arrdata[0].articles[pos].url
-            let image = arrdata[0].articles[pos].urlToImage
+            let image = arrdata[0].articles[pos].image
             let title_news = arrdata[0].articles[pos].title
             if (news_data == null) {
                 content.innerText = "No headlines (click on know more for more updates";
