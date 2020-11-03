@@ -30,7 +30,8 @@ getinfo = async (event) => {
             const respone = await fetch(url)
             const data = await respone.json()
             const arrdata = [data];
-            const pos = Math.floor(Math.random(1, 50) * 10)
+
+            const pos = Math.floor(Math.random() * 11)
             console.log(arrdata[0].articles[pos])
             let news_data = arrdata[0].articles[pos].description
             let news_url = arrdata[0].articles[pos].url
