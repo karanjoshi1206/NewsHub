@@ -26,7 +26,7 @@ getinfo = async (event) => {
         try {
             // let url = `https://newsapi.org/v2/top-headlines?country=${count}&category=${categ}&apiKey=a148ab49564c464395cd8da3e6b92d0b`
             // let url = `https://content.guardianapis.com/search?q=${categ}from-date=${date}&api-key=test`
-            let url = `https://gnews.io/api/v4/search?q=${categ}&country=${count}&token=ba1aeb783849b19cc0bd2b964e4c5236&lang=en`
+            let url = `https://gnews.io/api/v4/search?q=${categ}&country=${count}&token=0baba4dbac881b4d3fad1518a261ff83&lang=en`
             const respone = await fetch(url)
             const data = await respone.json()
             const arrdata = [data];
